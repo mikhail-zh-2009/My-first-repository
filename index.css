@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("img1.png");
+    background-size: 100% 100vh;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.large-text {
+    font-size: 10vh;
+    margin: 25vh 0 10%;
+    grid-column: 2 / 3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-text-field-block {
+    display: flex;
+    grid-column: 2 / 3;
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #0006;
+    min-height: 5vh;
+    white-space: nowrap;
+}
+.search-text-field {
+    outline: none;
+    border: 0;
+    width: 90%;
+    text-align: center;
+    height: 100%;
+    background-color: #0000;
+}
+.search-button {
+    border: 0;
+    border-radius: 5px;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    background-image: url("search-image-1.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+.search-button:hover {
+    background-color: gainsboro;
+}
